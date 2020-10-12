@@ -1,15 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
+import { Button } from "../components/button"
 
-export default function Home() {
-  return (
-    <div>
-      Hello!
-      <div>
-        <Link to="/blog/">blog page</Link>
-        {/* link name components can only be used internally */}
-      </div>
-      <a href="https://www.gatsbyjs.org">gatsby docs</a>
-    </div>
-  )
-}
+export default () => (
+  <Layout>
+    <h1>hello hello hello</h1>
+    <Button>Click button</Button>
+  </Layout>
+)
