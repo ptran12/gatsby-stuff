@@ -6,7 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`],
   siteMetadata: {
     title: "Gatsby Stuff",
     description: "random description",
@@ -14,4 +13,14 @@ module.exports = {
     data: ["item1", "item2"],
     person: { name: "bob", age: 21 },
   },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
 }
