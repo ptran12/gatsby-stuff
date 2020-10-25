@@ -17,6 +17,9 @@ export const Navbar = () => {
         <li>
           <Link to="/test/">Test</Link>
         </li>
+        <li>
+          <Link to="/images/">Images</Link>
+        </li>
       </ul>
     </nav>
   )
